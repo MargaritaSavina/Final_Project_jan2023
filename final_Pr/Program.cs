@@ -9,4 +9,15 @@ string elem4 = Console.ReadLine();
 Console.WriteLine("Введите 5й элемент массива:");
 string elem5 = Console.ReadLine();
 
+string[] array = new string[]{elem1,elem2,elem3,elem4,elem5};
+
+void PrintArray(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write(arr[i]+"|");
+    }
+}
+PrintArray(array)
+
 
