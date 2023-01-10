@@ -13,10 +13,12 @@ string[] array = new string[]{elem1,elem2,elem3,elem4,elem5};
 
 void PrintArray(string[] arr)
 {
+    Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write(arr[i] +" | ");
+        Console.Write(arr[i] +", ");
     }
+    Console.Write("]");
 }
 
 int NumberElementsLessThanThree(string[] arr)
@@ -28,6 +30,29 @@ int NumberElementsLessThanThree(string[] arr)
         }
     return count;
 } 
+
+string[] ArrayElemLessThanThree(string[] arr, int arrElem)
+{
+    string[] resultArray = new string[arrElem];
+    int j = 0;
+    while (j < arrElem)
+        {
+            for (int i = 0; i < arr.Length; i++)
+                {
+                    if(arr[i].Length <= 3) 
+                    {
+                        resultArray[j] = arr[i];
+                        j++;
+                    }    
+                }
+        }
+    return resultArray;
+}
+
+
+
+
+
 
 
 
