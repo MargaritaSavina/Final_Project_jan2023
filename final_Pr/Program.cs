@@ -10,6 +10,12 @@ Console.WriteLine("Введите 5й элемент массива:");
 string elem5 = Console.ReadLine();
 
 string[] array = new string[]{elem1,elem2,elem3,elem4,elem5};
+PrintArray(array);
+Console.Write("   =>   ");
+int arrayElem = NumberElementsLessThanThree(array);
+string[] resArr = ArrayElemLessThanThree(array, arrayElem);
+PrintArray(resArr);
+
 
 void PrintArray(string[] arr)
 {
